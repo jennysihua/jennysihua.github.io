@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#grid {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 50vw 50vw;
+  grid-template-rows: 50vh 50vh;
+}
+
+#about {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  background-image: url(photo1.jpg);
+  background-size: 100%, cover;
+}
+
+#projects {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  background-image: url(photo2.jpg);
+  background-size: 100%, cover;
+}
+
+#music {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  background-image: url(photo3.jpg);
+  background-size: 100%, cover;
+}
+
+#photos {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  background-image: url(photo4.jpg);
+  background-size: 100%, cover;
+}
+
+#about.expanded {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  background-image: url(photo1.jpg);
+  background-size: 100%, cover;
+}
+
+.collapsed {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.expanded {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background-color: magenta;
+}
+
+.label-section {
+  font-size: 2rem;
+  font-family: "Bungee Hairline", cursive;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.4)
+}
+
+.section:hover {
+  text-decoration: underline;
+}
+
+.hide-detail {
+  display: none;
+}
