@@ -3,57 +3,57 @@
   padding: 0;
 }
 
-#grid {
+#flex-column {
   width: 100vw;
   height: 100vh;
-  display: grid;
-  grid-template-columns: 50vw 50vw;
-  grid-template-rows: 50vh 50vh;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
 }
 
 #about {
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 1;
-  grid-row-end: 2;
+  flex: 0 1 50%;
+  height: 50%;
+  width: 50%;
+  min-width: 0;
+  min-height: 0;
   background-image: url(photo1.jpg);
   background-size: 100%, cover;
+  background-attachment: fixed;
+  transition: all 400ms ease-in-out;
 }
 
 #projects {
-  grid-column-start: 2;
-  grid-column-end: 3;
-  grid-row-start: 1;
-  grid-row-end: 2;
+  flex: 0 3 50%;
+  height: 50%;
+  width: 50%;
+  min-width: 0;
+  min-height: 0;
   background-image: url(photo2.jpg);
   background-size: 100%, cover;
+  background-attachment: fixed;
+  transition: all 400ms ease-in-out;
+}
+
+#about:hover {
+  height: 100vh;
+  flex-basis: 100%;
 }
 
 #music {
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 2;
-  grid-row-end: 3;
+  height: 50%;
+  width: 50%;
   background-image: url(photo3.jpg);
   background-size: 100%, cover;
+  background-attachment: fixed;
 }
 
 #photos {
-  grid-column-start: 2;
-  grid-column-end: 3;
-  grid-row-start: 2;
-  grid-row-end: 3;
+  height: 50%;
+  width: 50%;
   background-image: url(photo4.jpg);
   background-size: 100%, cover;
-}
-
-#about.expanded {
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 1;
-  grid-row-end: 2;
-  background-image: url(photo1.jpg);
-  background-size: 100%, cover;
+  background-attachment: fixed;
 }
 
 .collapsed {
