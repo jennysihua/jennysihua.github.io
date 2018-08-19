@@ -5,41 +5,145 @@
     <!-- <meta http-equiv="refresh" content="3" > -->
     <title>Jenny Wang</title>
     <link href="style.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Bungee+Hairline" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=IM+Fell+Great+Primer:italic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Caveat|Abril+Fatface|Cinzel|Poiret+One|Corben|Playfair+Display+SC" rel="stylesheet">
   </head>
   <body>
-    <div id="flex-column">
-      <section class="collapsed" id="about">
-        <div class="label-section" id="label-about">About</div>
-        <div class="hide-detail">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          </p>
+    <div id="grid">
+      <section class="section" id="about">
+        <div class="section-inner" id="about-background">
+          <div class="label-section" id="label-about">
+            <h2>About</h2>
+            <div class="detail hide-detail">
+              <div class="card">
+                <h3>
+                  Hi, I'm Jenny.
+                </h3>
+                <p>
+                  I'm a fullstack developer looking for a fulltime position in NYC.
+                </p>
+                <p>
+                  Before starting to program, I got a double-major in Psychology and Art history from Columbia University, and worked in client-facing market research and advertising roles. I became increasingly drawn to the more technical aspects of my positions such as Excel and SQL, and began to code on the side.
+                </p>
+                <p>
+                  In March 2017, I quit my job and became a fulltime student at Fullstack Academy, an 3-month intensive JavaScript bootcamp in NYC.
+                </p>
+                <p>
+                  After finishing the program, I was hired on as a teaching fellow at the bootcamp, where I help current students learn how to code.
+                </p>
+                <p>
+                  In my free time, I enjoy playing guitar, going to museums, and walking the earth.
+                </p>
+                </p>
+                <div id="socialmedia">
+                    <a href="mailto:jennysihua@gmail.com"><img src="email.png"></a>
+                  <a href="https://github.com/jennysihua"><img src="github.png"></a>
+                  <a href="https://www.linkedin.com/in/jennyswang/"><img src="linkedin.png"></a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
-      <section class="collapsed" id="projects">
-          <div class="label-section" id="label-projects">Projects</div>
-          <div class="hide-detail">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
+      <section class="section" id="projects">
+        <div class="section-inner" id="projects-background">
+          <div class="label-section" id="label-projects">
+            <h2>Projects</h2>
+            <div class="detail hide-detail">
+              <div class="card center">
+                <h3>Yak Language Learner</h3>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/Vw629nc7pZY?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                <p>
+                  A Spanish-learning app created with React and Redux. Users input a list of newline-separated Spanish words, and the app dynamically generates flashcards with definitions, examples, and lexical information. From there, users can select the definitions and examples they find most helpful to appear on their flashcards.
+                </p>
+              </div>
+              <div class="card center">
+                <h3>Dime</h3>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/j5LdxyOavXY?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                <p>
+                  A personal finance app created with React Native, Expo, D3, Firebase, Google Vision API, and Keras.js. Users can input spend by taking a picture of their receipts, scanning barcodes, and manually inputting purchases. Dime takes this data and uses machine learning to predict future spend.
+                </p>
+              </div>
+              <div class="card center">
+                <h3>Least Costly Mobile Homes Direct</h3>
+                <img src="lcmhd.png" width="560" id="lcmhd">
+                <p>
+                  <a href="https://leastcostlymobilehomesdirect.herokuapp.com/">Deployed Site</a>
+                </p>
+                <p>
+                  A fully-functional e-commerce site created with React and Redux and deployed via Heroku. Features Google OAuth, a persistent cart, and Stripe checkout.
+                </p>
+              </div>
+            </div>
           </div>
+        </div>
       </section>
-      <section class="collapsed" id="music">
-          <div class="label-section" id="label-music">Music</div>
-          <div class="hide-detail">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
+      <section class="section" id="skills">
+        <div class="section-inner" id="skills-background">
+          <div class="label-section" id="label-skills">
+            <h2>Skills</h2>
+            <div class="detail hide-detail">
+              <div class="card">
+                <h3>Technology</h3>
+                <p>
+                  <b>Fluent</b>: JavaScript, HTML, CSS, React, Redux, Node, Git, Express, SQL, Sequelize, Postgres, Excel
+                </p>
+                <p>
+                  <b>Intermediate:</b>: Java, React Native, Passport.js, jQuery, Socket.io
+                </p>
+                <p>
+                  <b>Beginner</b>: D3, OAuth, SVG
+                </p>
+              </div>
+              <div class="card">
+                <h3>Languages</h3>
+                <p>
+                  <b>Chinese</b>: My native tongue. Sadly, I can only speak, but I want to learn to read and write in the future!
+                </p>
+                <p>
+                  <b>Japanese</b>: I learned Japanese when I studied abroad in Tokyo for a year in high school.
+                </p>
+                <p>
+                  <b>Spanish</b>: Studied this in high school, and spent four months in Spain during an immersion program.
+                </p>
+                <p>
+                  <b>French</b>: Self-studied enough to skip the first year of French at Columbia. I took only one semester, but continue to learn by reading books.
+                </p>
+              </div>
+              <div class="card">
+                <h3>Other</h3>
+                <p>
+                  <b>Guitar</b>: I've played guitar for years, but still haven't learned to play jazz guitar. That's my next goal!
+                </p>
+                <p>
+                  <b>Pies</b>: I worked at a small pie shop in Texas for a year during high school, and bake a fierce apple pie.
+                </p>
+              </div>
+            </div>
           </div>
+        </div>
       </section>
-      <section class="collapsed" id="photos">
-          <div class="label-section" id="label-photos">Photos</div>
-          <div class="hide-detail">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
+      <section class="section" id="etc">
+        <div class="section-inner" id="etc-background">
+          <div class="label-section" id="label-etc">
+            <h2>Etc</h2>
+            <div class="detail hide-detail">
+              <div class="card center">
+                <h3>A Song I Wrote</h3>
+                <iframe width="100%" height="200" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/287103537&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+              </div>
+              <div class="card center">
+                <h3>A Chicken I Painted</h3>
+                <img src="chicken.jpg" height="350" id="chicken">
+              </div>
+              <div class="card center">
+                <h3>A Book I Like</h3>
+                <img src="earthlypowers.jpg" height=350>
+              </div>
+            </div>
           </div>
+        </div>
       </section>
     </div>
     <script
@@ -48,11 +152,27 @@
       crossorigin="anonymous">
     </script>
     <script>
-      // $(document).ready(() => {
-      //   $('#about').on('click', (e => {
-      //     e.target.className = e.target.className === 'collapsed' ? 'expanded' : 'collapsed'
-      //   }))
-      // })
+      $(document).ready(() => {
+        $('.section').on('click', (e => {
+
+          let target = $(event.target).hasClass('section') ? $(event.target) : $(event.target).parents('.section')
+
+          if(target.hasClass('expanded')) {
+            setTimeout(() => {
+              target.removeClass('z-index')
+            }, 500)
+            target.removeClass('expanded')
+            target.find('.label-section').removeClass('label-section-expanded')
+            target.find('.detail').addClass('hide-detail')
+            $('.section').removeClass('hidden')
+          } else {
+            target.addClass('z-index expanded')
+            target.find('.label-section').addClass('label-section-expanded')
+            $('.section').addClass('hidden')
+            target.find('.detail').removeClass('hide-detail')
+          }
+        })
+      )})
     </script>
   </body>
 </html>
