@@ -5,15 +5,13 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>Jenny Wang</title>
     <link href="style.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=IM+Fell+Great+Primer:italic" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Caveat|Abril+Fatface|Cinzel|Poiret+One|Corben|Playfair+Display+SC" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display+SC|Poiret+One" rel="stylesheet">
   </head>
   <body>
     <div id="grid">
       <section class="section" id="about">
         <div class="section-inner" id="about-background">
-          <div class="label-section" id="label-about">
+          <div class="content" id="label-about">
             <h2>About</h2>
             <div class="detail hide-detail">
               <div class="card">
@@ -48,7 +46,7 @@
       </section>
       <section class="section" id="projects">
         <div class="section-inner" id="projects-background">
-          <div class="label-section" id="label-projects">
+          <div class="content" id="label-projects">
             <h2>Projects</h2>
             <div class="detail hide-detail">
               <div class="card center">
@@ -81,7 +79,7 @@
       </section>
       <section class="section" id="skills">
         <div class="section-inner" id="skills-background">
-          <div class="label-section" id="label-skills">
+          <div class="content" id="label-skills">
             <h2>Skills</h2>
             <div class="detail hide-detail">
               <div class="card">
@@ -126,7 +124,7 @@
       </section>
       <section class="section" id="misc">
         <div class="section-inner" id="misc-background">
-          <div class="label-section" id="label-misc">
+          <div class="content" id="label-misc">
             <h2>Misc</h2>
             <div class="detail hide-detail">
               <div class="card center">
@@ -159,18 +157,18 @@
 
           let target = $(event.target).hasClass('section') ? $(event.target) : $(event.target).parents('.section')
 
-          if(target.hasClass('expanded')) {
+          if(target.hasClass('section-expanded')) {
             setTimeout(() => {
               target.removeClass('z-index')
             }, 500)
-            target.removeClass('expanded')
-            target.find('.label-section').removeClass('label-section-expanded')
+            target.removeClass('section-expanded')
+            target.find('.content').removeClass('content-expanded')
             target.find('.detail').addClass('hide-detail')
-            // $('.section').removeClass('hidden')
+            $('.section').removeClass('hidden')
           } else {
-            target.addClass('z-index expanded')
-            target.find('.label-section').addClass('label-section-expanded')
-            // $('.section').addClass('hidden')
+            $('.section').addClass('hidden')
+            target.addClass('z-index section-expanded')
+            target.find('.content').addClass('content-expanded')
             target.find('.detail').removeClass('hide-detail')
           }
         })
