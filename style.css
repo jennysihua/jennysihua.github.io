@@ -17,7 +17,6 @@
 #projects {
   top: 0;
   right: 0;
-  background-image: url(photo2.jpg);
 }
 
 #skills {
@@ -25,10 +24,9 @@
   left: 0;
 }
 
-#etc {
+#misc {
   bottom: 0;
   right: 0;
-  background-image: url(photo4.jpg);
 }
 
 .section {
@@ -64,33 +62,24 @@
 }
 
 #about-background {
-  background-image: url(photo1.jpg);
+  background-image: url(https://i.imgur.com/usVuJAz.jpg);
 }
 
 #projects-background {
-  background-image: url(photo2.jpg);
+  background-image: url(https://i.imgur.com/wcVPPIe.jpg);
 }
 
 #skills-background {
-  background-image: url(photo3.jpg);
+  background-image: url(https://i.imgur.com/elXN02I.jpg);
 }
 
-#etc-background {
-  background-image: url(photo4.jpg);
+#misc-background {
+  background-image: url(https://i.imgur.com/xUoN53X.jpg);
 }
 
 .section-inner:hover {
   transform: scale(1.03)
 }
-
-/*
-.hidden {
-  height: 0;
-  width: 0;
-  /* display:none; */
-  /* opacity: 0; */
-  /* flex-shrink: 1; */
-/* } */
 
 .z-index {
   z-index: 1
@@ -107,6 +96,7 @@
   height: 60px;
   width: 140px;
   background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 3px;
   transition: all 500ms ease;
 }
 
@@ -236,7 +226,7 @@ p {
   }
 
   .expanded {
-    height: 90vh;
+    height: 100vh;
     width: 100vw;
   }
 }
